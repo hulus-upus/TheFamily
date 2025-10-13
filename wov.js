@@ -4,7 +4,6 @@ const axios = require('axios');
 const API_BASE_URL = 'https://api.wolvesville.com';
 const BOT_TOKEN = 'LjNgvPQnLSUpofguobJi6D07Q7yQCWlCdC22U2PfRH3AHSFdvpG9yqg5G7dvIPd9';
 const CLAN_ID = 'f541a31f-0176-4615-8371-ed3f1d37c0c0';
-const INTERVAL_HOURS = 0.5;
 
 const api = axios.create({
   baseURL: API_BASE_URL,
@@ -36,13 +35,4 @@ async function skip() {
   await skipWaitingTime();
 }
 
-function main() {
-  skip();
-  
-  const intervalMs = INTERVAL_HOURS * 60 * 60 * 1000;
-  setInterval(() => {
-    skip();
-  }, intervalMs);
-}
-
-main();
+skip();
