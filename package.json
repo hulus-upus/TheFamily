@@ -1,0 +1,9 @@
+{
+  "name": "wolvesville-bot",
+  "version": "1.0.0",
+  "description": "Bot for Wolvesville",
+  "main": "wov.js",
+  "dependencies": {
+    "axios": "^1.6.0"
+  }
+}
