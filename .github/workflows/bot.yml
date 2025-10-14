@@ -2,7 +2,8 @@ name: Wolvesville Bot
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '0 * * * *'
+    - cron: '30 * * * *'
 
 jobs:
   run-bot:
